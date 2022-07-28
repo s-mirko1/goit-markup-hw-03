@@ -9,6 +9,17 @@
 колір фону нав #FFFFFF;
 колір фону футер і мейн #2F303A; */
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+    margin: 0;
+}
+
 html {
     box-sizing: border-box;
 }
@@ -141,14 +152,13 @@ header {
 
 .hero {
     background: var(--hero-bgc);
-    height: 600px;
+    text-align: center;
 }
 
 .hero-title {
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
-    text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--white-color);
@@ -168,7 +178,6 @@ header {
     font-size: 16px;
     line-height: 1.87;
     display: flex;
-    align-items: center;
     text-align: center;
     letter-spacing: 0.06em;
     color: var(--white-color);
@@ -209,6 +218,7 @@ header {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--primary-text-color);
+    margin-bottom: 26px;
 }
 
 .benefits-text {
