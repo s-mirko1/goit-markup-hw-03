@@ -50,7 +50,6 @@ html {
     padding-left: 15px;
     padding-right: 15px;
     width: 1200px;
-
 }
 
 
@@ -73,6 +72,12 @@ header {
     border-bottom: solid #ECECEC;
 }
 
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
 .link {
     text-decoration: none;
 }
@@ -84,17 +89,14 @@ header {
     color: var(--white-color);
 }
 
-/* Logo */
-
-.logo {
-    color: #2196F3;
-}
 
 /* Navigation */
 
 .site-nav {
     background-color: var(--white-bgc);
+    display: flex;
 }
+
 
 .logo {
     font-family: 'Raleway';
@@ -103,13 +105,19 @@ header {
     font-size: 26px;
     line-height: 1.93;
     letter-spacing: 0.03em;
-    color: var(--accent-color)
+    color: var(--accent-color);
+    padding-top: 24px;
+    padding-bottom: 25px;
 }
 
 .site-nav-list {
     margin: 0;
     padding-top: 32px;
     padding-bottom: 32px;
+    display: flex;
+    margin-right: 344px;
+    width: 281px;
+    
 }
 
 .site-nav-link {
@@ -118,12 +126,14 @@ header {
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: var(--primary-text-color);
+    margin-left: 50px;
 }
 
 .auth-nav-list {
     margin: 0;
     padding-top: 32px;
     padding-bottom: 32px;
+    display: flex;
 }
 
 .auth-nav-link {
@@ -132,6 +142,7 @@ header {
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: var(--second-text-color);
+    margin-left: 50px;
 }
 
 .site-nav-link:hover,
@@ -147,6 +158,13 @@ header {
 .site-nav .site-nav-link.current {
     color: var(--accent-color);
 }
+
+header .container {
+    display: flex;
+    
+}
+
+
 
 /* Hero */
 
@@ -209,7 +227,11 @@ header {
     margin: -1px;
 }
 
-.benefits-list {}
+.benefits-list {
+    display: flex;
+    justify-content: space-around;
+    padding-left: 0;
+}
 
 .benefits-title {
     font-weight: 700;
@@ -232,6 +254,7 @@ header {
 
 .product {
     background-color: var(--secondary-white-color);
+    display: flex;
 }
 
 .product-title {
@@ -241,11 +264,18 @@ header {
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--primary-text-color);
+    margin-bottom: 50px;
 }
 
-.product-list {}
+.product-list {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 0;
+}
 
-.product-item {}
+.product-item {
+    display: flex;
+}
 
 .section-title {
     color: var(--primary-text-color)
@@ -266,9 +296,16 @@ header {
     color: var(--primary-text-color);
 }
 
-.team-list {}
+.team-list {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 0;
+}
 
-.team-item {}
+.team-item {
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+}
 
 .team-img {
     margin-bottom: 30px;
@@ -292,10 +329,14 @@ header {
     color: var(--second-text-color);
 }
 
+.team-cards {
+    
+}
+
 /* Footer */
 
 .contacts {
-    background-color: var(--hero-bgc);
+    background-color: var(--hero-bgc);  
 }
 
 .contacts-link {
@@ -306,6 +347,12 @@ header {
     line-height: 1.93;
     letter-spacing: 0.03em;
     color: var(--accent-color);
+    margin-top: 60px;
+    margin-bottom: 20px;
+    display: inline-block;
+}
+
+.contacts-link {
 }
 
 .adress {
@@ -317,6 +364,7 @@ header {
 }
 
 .adress-item {
+    margin-bottom: 9px;
 }
 
 .adress-link {
@@ -325,6 +373,8 @@ header {
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: var(--white-color);
+    margin-bottom: 9px;
+    margin-top: 60px;
 }
 
 .adress-item-link {
@@ -346,7 +396,12 @@ header {
     background-color: var(--secondary-white-color);
 }
 
-.portfolio-list-btn {}
+.portfolio-list-btn {
+    display: flex;
+    justify-content: center;
+    padding-left: 0;
+    margin-bottom: 50px;
+}
 
 .portfolio-btn {
     cursor: pointer;
@@ -372,9 +427,18 @@ header {
     background-color: var(--accent-color);
 }
 
-.portfolio-list {}
+.portfolio-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-left: 0;
+}
 
-.portfolio-item {}
+.portfolio-item {
+    background: #FFFFFF;
+    border: 1px solid #EEEEEE;
+    margin-bottom: 30px;
+}
 
 .portfolio-item-title {
     font-weight: 700;
@@ -396,3 +460,10 @@ header {
 .portfolio-img {
     margin-bottom: 20px;
 }
+
+.adress-list {
+    padding-bottom: 60px;
+    padding-left: 0;
+}
+
+
