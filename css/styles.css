@@ -109,6 +109,7 @@ img {
     color: var(--accent-color);
     padding-top: 24px;
     padding-bottom: 25px;
+    margin-right: 43px;
 }
 
 .site-nav-list {
