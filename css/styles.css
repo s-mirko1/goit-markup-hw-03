@@ -298,7 +298,7 @@ header .container {
 
 .team {
     background-color: var(--third-white-color);
-    padding-top: 0;
+    
 }
 
 .team-title {
@@ -323,7 +323,6 @@ header .container {
 }
 
 .team-img {
-    margin-bottom: 30px;
 }
 
 .team-list-title {
